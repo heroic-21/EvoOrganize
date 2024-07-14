@@ -3,7 +3,38 @@
     <style name="Base.Theme.EvoOrganize" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary branding color -->
+        <item name="colorPrimary">@color/primary1</item>
+        <item name="colorPrimaryVariant">@color/primary2</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary branding color -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary2</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:navigationBarDividerColor">@color/grey</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Default background color -->
+        <item name="android:colorBackground">@color/white</item>
+
+        <!-- Text colors -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorSecondary">@color/grey</item>
     </style>
 
     <style name="Theme.EvoOrganize" parent="Base.Theme.EvoOrganize" />
+    <style name="BottomNavigationItemText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/white</item>
+        <item name="itemIconTint">@color/white</item>
+    </style>
 </resources>
