@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/button_bashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/baseline_dashboard_24"/>
+
+    <item
+        android:id="@+id/button_kegiatan"
+        android:title="Kegiatan"
+        android:icon="@drawable/material_symbols_event"/>
+
+    <item
+        android:id="@+id/button_organisasi"
+        android:title="Orgaisasi"
+        android:icon="@drawable/tdesign_member"/>
+
+    <item
+        android:id="@+id/button_profile"
+        android:title="Profile"
+        android:icon="@drawable/vector"/>
+</menu>
