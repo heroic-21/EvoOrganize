@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verifikasi Kata Sandi"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Password Baru"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Masukkan Password Baru"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/lock"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/editTextPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Konfirmasi Password Baru"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/lock1"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/grenn"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo1" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textViewSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up to continue"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/editTextFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Masukkan Nama Lengkap"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/person"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Masukkan Username"
+            android:inputType="text"
+            android:drawableStart="@drawable/personaye"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Masukkan Email Anda"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/email"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Masukkan Nomor Telepon"
+            android:inputType="phone"
+            android:drawableStart="@drawable/telp"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Masukkan Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/lock1"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Konfirmasi Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/lock"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SING UP"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/grenn"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social Media Login"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/gugel"
+                android:layout_marginEnd="16dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/fb" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
