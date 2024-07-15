@@ -1,87 +1,29 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="8dp"
-    android:layout_margin="10dp">
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="8dp"
-        app:cardCornerRadius="8dp">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/example_gambar"
-            android:scaleType="centerCrop"/>
-    </androidx.cardview.widget.CardView>
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/namaKegiatan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kegiatan 1"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            android:textColor="@color/primary2"
-            android:fontFamily="sans-serif-medium"/>
-
-        <TextView
-            android:id="@+id/DivisiKegiatan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Divisi Dokumentasi"
-            android:textSize="10sp"
-            android:textColor="@color/grey"
-            android:layout_marginTop="4dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Poster Acara"
-            android:textSize="10sp"
-            android:textColor="@color/grey"
-            android:layout_marginTop="2dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="end|center_vertical">
+        android:padding="16dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textJudulTugas"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="07, Januari 2024"
-            android:textSize="10sp"
-            android:textColor="@color/grey"
-            android:layout_marginBottom="4dp"/>
+            android:text="Judul Tugas"
+            android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textDeskripsiTugas"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/checklist"/>
+            android:text="Deskripsi singkat tugas" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/opsi_titik"/>
-        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</androidx.cardview.widget.CardView>

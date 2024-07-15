@@ -16,7 +16,7 @@ class KegiatanAdapter(private val kegiatanList: List<Kegiatan>) : RecyclerView.A
     }
     override fun onBindViewHolder(holder: KegiatanViewHolder, position: Int) {
         val kegiatan = kegiatanList[position]
-        holder.binding.alertTextView.text = kegiatan.nama
+        holder.binding.textKegiatan.text = kegiatan.nama
     }
 
     override fun getItemCount(): Int = kegiatanList.size

@@ -17,8 +17,8 @@ class TugasAdapter(private val tugasList: List<Tugas>) : RecyclerView.Adapter<Tu
 
     override fun onBindViewHolder(holder: TugasViewHolder, position: Int) {
         val tugas = tugasList[position]
-        holder.binding.namaKegiatan.text = tugas.judul
-        holder.binding.DivisiKegiatan.text = tugas.deskripsi
+        holder.binding.textJudulTugas.text = tugas.judul
+        holder.binding.textDeskripsiTugas.text = tugas.deskripsi
         // Set more properties if needed
     }
 

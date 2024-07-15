@@ -38,14 +38,16 @@ class DashboardFragment : Fragment() {
             , Kegiatan(2, "Samsul", "url")
         )
         val tugasList = listOf(Tugas(1, "Tugas Pemerkosaan", "Ini Tugas Penting Anjing"),
-            Tugas(1, "Sharing Session", "Divisi Dokumentasi"),
-            Tugas(1, "Sharing Session", "Divisi Dokumentasi"),
-            Tugas(1, "Sharing Session", "Divisi Dokumentasi"),
-            Tugas(1, "Sharing Session", "Divisi Dokumentasi"),
-            Tugas(1, "Sharing Session", "Divisi Dokumentasi"),
-            Tugas(1, "Sharing Session", "Divisi Dokumentasi"),
-            Tugas(1, "Sharing Session", "Divisi Dokumentasi"),
-            )
+            Tugas(1, "Tugas Pemerkosaan", "Ini Tugas Penting Anjing"),
+            Tugas(1, "Tugas Pemerkosaan", "Ini Tugas Penting Anjing"),
+            Tugas(1, "Tugas Pemerkosaan", "Ini Tugas Penting Anjing"),
+            Tugas(1, "Tugas Pemerkosaan", "Ini Tugas Penting Anjing"),
+            Tugas(1, "Tugas Pemerkosaan", "Ini Tugas Penting Anjing"),
+            Tugas(1, "Tugas Pemerkosaan", "Ini Tugas Penting Anjing"),
+            Tugas(1, "Tugas Pemerkosaan", "Ini Tugas Penting Anjing"),
+            Tugas(1, "Tugas Pemerkosaan", "Ini Tugas Penting Anjing"),
+            Tugas(1, "Tugas Pemerkosaan", "Ini Tugas Penting Anjing"),
+            Tugas(1, "Tugas Pemerkosaan", "Ini Tugas Penting Anjing"))
 
         // Setup Kegiatan RecyclerView
         binding.recyclerViewKegiatan.apply {

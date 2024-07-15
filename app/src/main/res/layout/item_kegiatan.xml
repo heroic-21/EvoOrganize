@@ -1,90 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="175dp"
-    android:layout_height="175dp"
-    android:layout_margin="10dp"
-    android:background="@drawable/example_gambar">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp">
 
-    <!-- Content Container -->
-    <RelativeLayout
-        android:id="@+id/contentContainer"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_gradient"
-        android:padding="8dp"
-        android:elevation="4dp">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <!-- Alert TextView -->
+        <ImageView
+            android:id="@+id/imageKegiatan"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/logo_evoorganize"/>
+
         <TextView
-            android:id="@+id/alertTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="8dp"
-            android:background="@android:color/holo_red_light"
-            android:padding="4dp"
-            android:textSize="8sp"
-            android:text="7 Hari Lagi!"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
-
-        <!-- Progress TextView -->
-        <TextView
-            android:id="@+id/progressTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Progress 60%"
-            android:textSize="8sp"
-            android:textColor="@color/white"
-            android:layout_below="@id/alertTextView"
-            android:layout_marginTop="30dp" />
-
-        <!-- ProgressBar -->
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:id="@+id/textKegiatan"
             android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_below="@id/progressTextView"
-            android:layout_marginTop="4dp"
-            android:progress="60"
-            android:max="100"
-            android:progressDrawable="@drawable/progress_bar" />
-
-        <!-- Activity Title TextView -->
-        <TextView
-            android:id="@+id/activityTitleTextView"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/progressBar"
-            android:layout_marginTop="5dp"
-            android:text="Kegiatan 1"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:text="Nama Kegiatan"
+            android:textAlignment="center" />
 
-        <!-- Activity Date TextView -->
-        <TextView
-            android:id="@+id/activityDateTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/activityTitleTextView"
-            android:layout_marginTop="4dp"
-            android:text="01 Januari - 02 Februari 2024"
-            android:textColor="@color/white"
-            android:textSize="10sp" />
-
-        <!-- Jobdesk Button -->
-        <Button
-            android:id="@+id/jobdeskButton"
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:layout_below="@id/activityDateTextView"
-            android:layout_marginTop="5dp"
-            android:text="Jobdesk"
-            android:backgroundTint="@color/primary1"
-            android:textColor="@android:color/white"
-            android:textAllCaps="false"
-            android:textSize="8sp" />
-    </RelativeLayout>
-</RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
